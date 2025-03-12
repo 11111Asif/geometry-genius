@@ -9,21 +9,126 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
-<body>
+<body class="m-4">
     <header>
 
     </header>
     <main>
         <!-- main content container -->
-         <div>
+         <div class="flex flex-col md:flex-row ">
             <!-- shape card container -->
-             <div></div>
+             <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+                <!-- Triangle card -->
+                <div class="card bg-base-100 lg:w-72 shadow-sm">
+                    <figure class="">
+                      <img
+                        src="images/triangle.png"
+                        alt="Shoes"
+                        class="py-5 px-5" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title">Triangle</h2>
+                      <p>Area = 0.5 * b * h </p>
+                      <div>
+                        <input id="triangle-base" class="w-20 text-1xl p-1 rounded-sm" type="text" placeholder="b">
+                        <span>cm</span>
+                        <input class="w-20 text-1xl p-1 rounded-sm" type="text" placeholder="h">
+                        <span class="">cm</span>
+                      </div>
+                      <div class=" w-full card-actions ">
+                        <button onclick="calculateTriangleArea()" class="btn btn-primary w-full ">Calculate</button>
+                      </div>
+                    </div>
+                  </div>
+                   <!-- Rectangle card -->
+                <div class="card bg-base-100 lg:w-72 shadow-sm">
+                    <figure class="">
+                      <img
+                        src="images/rectangle.png"
+                        alt="Shoes"
+                        class="py-5 px-5" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title">Rectangle</h2>
+                      <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+                      <div class="card-actions">
+                        <button class="btn btn-primary">Buy Now</button>
+                      </div>
+                    </div>
+                  </div>
+                   <!-- Parallelogram card -->
+                <div class="card bg-base-100 lg:w-72 shadow-sm">
+                    <figure class="">
+                      <img
+                        src="images/parallelogram.png"
+                        alt="Shoes"
+                        class="py-5 px-5" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title">Parallelogram</h2>
+                      <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+                      <div class="card-actions">
+                        <button class="btn btn-primary">Buy Now</button>
+                      </div>
+                    </div>
+                  </div>
+                   <!-- Rhombus card -->
+                <div class="card bg-base-100 lg:w-72 shadow-sm">
+                    <figure class="">
+                      <img
+                        src="images/rhombus.png"
+                        alt="Shoes"
+                        class="py-5 px-5" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title">Rhombus</h2>
+                      <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+                      <div class="card-actions">
+                        <button class="btn btn-primary">Buy Now</button>
+                      </div>
+                    </div>
+                  </div>
+                   <!-- Pentagon card -->
+                <div class="card bg-base-100 lg:w-72 shadow-sm">
+                    <figure class="">
+                      <img
+                        src="images/pentagon.png"
+                        alt="Shoes"
+                        class="py-5 px-5" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title">Pentagon</h2>
+                      <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+                      <div class="card-actions">
+                        <button class="btn btn-primary">Buy Now</button>
+                      </div>
+                    </div>
+                  </div>
+                   <!-- Ellipse card -->
+                <div class="card bg-base-100 lg:w-72 shadow-sm">
+                    <figure class="">
+                      <img
+                        src="images/ellipse.png"
+                        alt="Shoes"
+                        class="py-5 px-5" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title">Ellipse</h2>
+                      <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+                      <div class="card-actions">
+                        <button class="btn btn-primary">Buy Now</button>
+                      </div>
+                    </div>
+                  </div>
+             </div>
              <!-- Area calculation container -->
-              <div class="w-96">
+              <div class="lg:w-80 text-center border-2 border-gray-700 rounded-md">
                 <h3 class="text-2xl">Area calculation</h3>
+                <hr>
               </div>
          </div>
     </main>
+    <script src="scripts/triangle-calculate.js"></script>
 </body>
 
 </html>
