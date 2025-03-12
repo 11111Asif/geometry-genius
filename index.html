@@ -32,8 +32,11 @@
                       <div>
                         <input id="triangle-base" class="w-20 text-1xl p-1 rounded-sm" type="text" placeholder="b">
                         <span>cm</span>
-                        <input class="w-20 text-1xl p-1 rounded-sm" type="text" placeholder="h">
+                        <input id="triangle-height" class="w-20 text-1xl p-1 rounded-sm" type="text" placeholder="h">
                         <span class="">cm</span>
+                      </div>
+                      <div>
+                        <p class="text-2xl">Area:<span id="triangle-area"></span><span>cm<sup>2</sup></span></p>
                       </div>
                       <div class=" w-full card-actions ">
                         <button onclick="calculateTriangleArea()" class="btn btn-primary w-full ">Calculate</button>
@@ -50,9 +53,15 @@
                     </figure>
                     <div class="card-body items-center text-center">
                       <h2 class="card-title">Rectangle</h2>
-                      <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
-                      <div class="card-actions">
-                        <button class="btn btn-primary">Buy Now</button>
+                      <p>Area = w * l </p>
+                      <div>
+                        <input id="triangle-width" class="w-20 text-1xl p-1 rounded-sm" type="text" placeholder="w">
+                        <span>cm</span>
+                        <input id="triangle-length" class="w-20 text-1xl p-1 rounded-sm" type="text" placeholder="l">
+                        <span class="">cm</span>
+                      </div>
+                      <div class="card-actions w-full">
+                        <button onclick="rectangleCalculateArea()" class="btn btn-primary w-full">Buy Now</button>
                       </div>
                     </div>
                   </div>
@@ -129,6 +138,7 @@
          </div>
     </main>
     <script src="scripts/triangle-calculate.js"></script>
+    <script src="scripts/rectangle-calculate.js"></script>
 </body>
 
 </html>
