@@ -103,9 +103,18 @@
                     </figure>
                     <div class="card-body items-center text-center">
                       <h2 class="card-title">Rhombus</h2>
-                      <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
-                      <div class="card-actions">
-                        <button class="btn btn-primary">Buy Now</button>
+                      <p>Area (A) = 0.5 * d1 * d2 </p>
+                      <div>
+                        <input id="rhombus-d1" class="w-20 text-1xl p-1 rounded-sm" type="text" placeholder="d1">
+                        <span>cm</span>
+                        <input id="rhombus-d2" class="w-20 text-1xl p-1 rounded-sm" type="text" placeholder="d2">
+                        <span class="">cm</span>
+                      </div>
+                      <div>
+                        <p class="text-2xl">Area:<span id="rhombus-area">0</span><span>cm<sup>2</sup></span></p>
+                      </div>
+                      <div class="card-actions w-full">
+                        <button onclick="rhombusCalculateArea()" class="btn btn-primary w-full">Calculate</button>
                       </div>
                     </div>
                   </div>
@@ -119,9 +128,18 @@
                     </figure>
                     <div class="card-body items-center text-center">
                       <h2 class="card-title">Pentagon</h2>
-                      <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
-                      <div class="card-actions">
-                        <button class="btn btn-primary">Buy Now</button>
+                      <p>Area = 0.5 * p * b </p>
+                      <div>
+                        <input id="pentagon-perimeter" class="w-20 text-1xl p-1 rounded-sm" type="text" placeholder="p">
+                        <span>cm</span>
+                        <input id="pentagon-apothem" class="w-20 text-1xl p-1 rounded-sm" type="text" placeholder="b">
+                        <span class="">cm</span>
+                      </div>
+                      <div>
+                        <p class="text-2xl">Area:<span id="pentagon-area">0</span><span>cm<sup>2</sup></span></p>
+                      </div>
+                      <div class="card-actions w-full">
+                        <button onclick="pentagonCalculateArea()" class="btn btn-primary w-full">Calculate</button>
                       </div>
                     </div>
                   </div>
@@ -135,16 +153,25 @@
                     </figure>
                     <div class="card-body items-center text-center">
                       <h2 class="card-title">Ellipse</h2>
-                      <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
-                      <div class="card-actions">
-                        <button class="btn btn-primary">Buy Now</button>
+                      <p>Area = π * a * b </p>
+                      <div>
+                        <input id="ellipse-axis" class="w-20 text-1xl p-1 rounded-sm" type="text" placeholder="a">
+                        <span>cm</span>
+                        <input id="ellipse-base" class="w-20 text-1xl p-1 rounded-sm" type="text" placeholder="b">
+                        <span class="">cm</span>
+                      </div>
+                      <div>
+                        <p class="text-2xl">Area:<span id="ellipse-area">0</span><span>cm<sup>2</sup></span></p>
+                      </div>
+                      <div class="card-actions w-full">
+                        <button onclick="ellipseCalculateArea()" class="btn btn-primary w-full">Calculate</button>
                       </div>
                     </div>
                   </div>
              </div>
              <!-- Area calculation container -->
-              <div class="lg:w-80 text-center border-2 border-gray-700 rounded-md">
-                <h3 class="text-2xl">Area calculation</h3>
+              <div  class="lg:w-80 text-center border-2 border-gray-700 rounded-md">
+                <h3 id="calculate-area" class="text-2xl">Area calculation</h3>
                 <hr>
               </div>
          </div>
@@ -152,6 +179,9 @@
     <script src="scripts/triangle-calculate.js"></script>
     <script src="scripts/rectangle-calculate.js"></script>
     <script src="scripts/parallelogram-calculate.js"></script>
+    <script src="scripts/rhombus-calculate.js"></script>
+    <script src="scripts/pentagon-calculate.js"></script>
+    <script src="scripts/ellipse-calculate.js"></script>
 </body>
 
 </html>
